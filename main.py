@@ -30,7 +30,7 @@ class Player:
         self.y = y
 
         # Load the player's image
-        self.image = pygame.image.load("player.png")
+        self.image = pygame.image.load("assets/images/player.png")
         self.image = pygame.transform.scale(self.image, (50, 50))
 
     def handle_keys(self):
