@@ -4,6 +4,8 @@ import random
 FRAME_RATE = 60
 PLAYER_SPEED = 2
 clock = pygame.time.Clock()
+RESOLUTION_X = 500
+RESOLUTION_Y = 300
 
 def generate_map(width, height):
     # Create an empty map
@@ -56,7 +58,7 @@ def main():
 
     # Initialize Pygame and set up the window
     pygame.init()
-    screen = pygame.display.set_mode((500, 300))
+    screen = pygame.display.set_mode((RESOLUTION_X, RESOLUTION_Y))
     pygame.display.set_caption("My Game")
 
     # Define colors
