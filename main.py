@@ -2,7 +2,7 @@ import pygame
 import random
 
 FRAME_RATE = 60
-
+PLAYER_SPEED = 2
 clock = pygame.time.Clock()
 
 def generate_map(width, height):
@@ -39,13 +39,13 @@ class Player:
 
         # Move the player based on the keys
         if keys[pygame.K_a]:
-            self.x -= 5
+            self.x -= PLAYER_SPEED
         if keys[pygame.K_d]:
-            self.x += 5
+            self.x += PLAYER_SPEED
         if keys[pygame.K_w]:
-            self.y -= 5
+            self.y -= PLAYER_SPEED
         if keys[pygame.K_s]:
-            self.y += 5
+            self.y += PLAYER_SPEED
 
     def draw(self, screen):
         # Draw the player's image on the screen
